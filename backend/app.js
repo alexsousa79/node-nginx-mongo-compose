@@ -24,7 +24,7 @@ const Client = restful.model('Client',{
 })
 
 //Rest API
-Client.methods(['get','post','put','delete'])
+Client.methods(['get','post','put','delete']) 
 Client.updateOptions({new: true, runValidator: true})
 
 //Rotas

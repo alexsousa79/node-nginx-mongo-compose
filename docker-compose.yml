@@ -8,7 +8,7 @@ services:
     - ./backend:/backend
     ports: 
     - 3000:3000
-    command: bash -c "cd /backend && npm i && node app"
+    command: bash -c "cd /backend && npm i && npm install -g nodemon && nodemon app.js"
   frontend: 
     image: nginx:1.15
     volumes: 
